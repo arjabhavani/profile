@@ -26,5 +26,11 @@ $(document).ready(function () {
             }
         }
     })
+    $(".side-close-btn").on('click', function () {
+        $(".nav-menu-box-mobile-slide").removeClass('active');
+    });
+    $('.hamburger').on('click', function () {
+        $(".nav-menu-box-mobile-slide").toggleClass('active');
+    });
 
 })
