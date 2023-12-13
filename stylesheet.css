@@ -432,7 +432,9 @@ a {
     border-radius: 12px;
     border: 0.4px solid #545454;
 }
-
+.service-list-item{
+    cursor: pointer;
+}
 .service-list .service-list-item.active {
     background: #FD6F00 !important;
     color: #ffffff !important;
@@ -1106,4 +1108,47 @@ a {
     .nav-list {
         padding: 0;
     }
+    .myTabs{
+        margin:25px auto;
+        max-width: 80%;
+      }
+      .myTabs .tabsContent{
+        width: 100%;
+      }
+      .myTabs .tabsTitle{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .myTabs .tabsTitle .tabButton{
+        padding:25px;
+        background-color:#838181;
+        color:#ffffff;
+        font-size:16px;
+        border-left:1px solid lightgray;
+        flex:1;
+        cursor: pointer;
+      }
+      .myTabs .tabsTitle .tabButton:hover{
+        background-color:#5a5858;
+      }
+      .myTabs .tabsTitle .tabButton.active{
+        background-color:#FD6F00;
+        color:#ffffff;
+        font-weight: bold;
+      }
+      .myTabs .tabsTitle .tabButton:first-child{
+        border-left:none;
+      }
+      .myTabs .tabsContent .tabContent{
+        background-color:#ffffff;
+        padding:25px;
+        font-size:12px;
+        display: none;
+      }
+      .myTabs .tabsContent .tabContent.active{
+        display: block;
+      }
+      .tabContent{
+        background: #F8F8F8 !important;
+      }
 }
