@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="pt-40 padding">
+            <div class="container">
+                <div class="nav-inner-holder">
+                    <div class="nav-logo">
+                        <div class="logo-img pr-10">
+                            <img src="images/Subtract.png" alt="logo image" class="img-fluid">
+                        </div>
+                        <div class="logo-text">
+                            <h5><strong>M</strong>umair</h5>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <div class="nav-menu-box nav-menu-box-mobile-slide">
+                        <div class="side-close-btn">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="list-item"><a href="index.html">Home</a></li>
+                            <li class="list-item"><a href="about-me.html">About me</a></li>
+                            <li class="list-item"><a href="#">Service</a></li>
+                            <li class="list-item"><a href="#">Projects</a></li>
+                            <li class="list-item"><a href="#">Testimonials</a></li>
+                            <li class="list-item"><a href="contact.html">Contact</a></li>
+                            <button type="button">Download CV</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+   <section class="contact-us-section padding">
+    <div class="container">
+        <div class="inner-contact-us">
+            <h2>Contact Form</h2>
+            <div class="address-detail-box pt-25">
+                <div class="address-box">
+                    <div class="ad-icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-text">
+                        <p><strong>Address:</strong> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                    </div>
+                </div>
+                <div class="address-box">
+                    <div class="ad-icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-text">
+                        <p><strong>Phone:</strong> <a href="tel://1235235598">+ 1235 2355 98</a></p>
+                    </div>
+                </div>
+                <div class="address-box">
+                    <div class="ad-icon">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-text">
+                        <p><strong>Email:</strong> <a href="mailto:arja.bhavani@gmail.com">info@yoursite.com</a></p>
+                    </div>
+                </div>
+                <div class="address-box">
+                    <div class="ad-icon">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-text">
+                        <p><strong>Website:</strong> yoursite.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="form-section d-flex padding">
+    <div class="container">
+        <div class="inner-form pt-25 d-flex">
+            <div class="contact-form-left pt-25 d-flex">
+                <h3 class="mb-10 pb-15">Please input the details below</h3>
+                <form action="" class="contact-form d-flex" id="contact-n" onsubmit="return validateForm()">
+                    <fieldset class="form-group d-flex ">
+                        <label for="fname" class="fname flex-50 pr-5">FULL NAME</label>
+                        <input type="text" class="form-control error flex-50 pl-5 fname" id="fname" placeholder="Name" >
+                        <div class="alert" id="fname-error">Please enter your name.</div>
+                        <label for="fname" class="fname flex-50 pl-5">LAST NAME</label>
+                        <input type="text" class="form-control error flex-50 pl-5" id="lname" placeholder="Last name" >
+                        <div class="alert" id="lname-error">Please enter your last name.</div>
+                    </fieldset>
+                    <fieldset class="form-group d-flex">
+                        <label for="fname" class="fname">EMAIL ADDRESS</label>
+                        <input type="text" class="form-control error pl-5 femail" id="email" placeholder="Email" >
+                        <div class="alert" id="email-error">Please enter your email id.</div>
+                        <label for="fname" class="fname">CONTACT</label>
+                        <input type="text" class="form-control error pl-5" id="fcontact" placeholder="Contact number" >
+                        <div class="alert" id="fcontact-error">Please enter your contact number.</div>
+                        <label for="fname" class="fname">MESSAGE</label>
+                        <textarea name="message" id="message" cols="20" rows="10" placeholder="Message" class="pl-5"></textarea>
+                        <div class="alert" id="message-error">Please enter message.</div>
+                    </fieldset>
+                    <fieldset class="form-check-box mb-10">
+                        <input type="checkbox" name="fname" id="fname_check" value="check1">
+                        <label for="fname" class="fname">FULL NAME</label>
+                        <input type="checkbox" name="fname" id="lname_check" value="check2">
+                        <label for="fname" class="fname">LAST NAME</label>
+                        <input type="checkbox" name="fname" id="email_check" value="check3">
+                        <label for="fname" class="fname">EMAIL</label>
+                        <input type="checkbox" name="fname" id="contact_check" value="check4">
+                        <label for="fname" class="fname">CONTACT</label>
+                        <input type="checkbox" name="fname" id="mess_check" value="check5">
+                        <label for="fname" class="fname">MESSAGE</label>
+                        <!-- <div class="alert" id="name_alert">Please check atleast one check box</div> -->
+                    </fieldset>
+                    <button class="mb-30" type="button" id="contact-two-btn">Send message</button>
+                </form>
+            </div>
+            <div class="contact-form-right pt-25 mt-12 d-flex">
+                <div class="inner-right d-flex mb-30">
+                    <img src="images/img.jpg.webp" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+    <footer class="footer-section d-flex padding">
+        <div class="container">
+            <div class="inner-footer d-flex flex-column">
+                <div class="footer-logo mt-40">
+                    <img src="images/logo.png" alt="footer logo" class="img-fluid">
+                </div>
+                <div class="nav-menu-box pt-25">
+                    <ul class="nav-list">
+                        <li class="list-item"><a href="#">Home</a></li>
+                        <li class="list-item"><a href="#">About me</a></li>
+                        <li class="list-item"><a href="#">Service</a></li>
+                        <li class="list-item"><a href="#">Projects</a></li>
+                        <li class="list-item"><a href="#">Testimonials</a></li>
+                        <li class="list-item"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social-icon-group mt-40">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com"><i class="fa fa-instagram"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copy-right d-flex p-20">
+        <div class="container">
+            <div class="rights d-flex">
+                <p class="">© 2023 <span>Mumair</span> All Rights Reserved , Inc.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

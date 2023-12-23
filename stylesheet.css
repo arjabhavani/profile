@@ -570,17 +570,27 @@ a {
     padding-left: 15px;
 }
 
-.input-box a {
+.input-box button {
     width: 222px;
     height: 65px;
     display: block;
     border-radius: 14px;
     background: #FD6F00;
     text-align: center;
-    padding-top: 21px;
+    /* padding-top: 21px; */
     color: #fff;
     font-weight: 500;
     font-size: 17px;
+    border: none;
+}
+
+.input-box button:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+.contact-form button:disabled {
+    opacity: 0.3;
+    cursor: default;
 }
 
 .footer-section {
@@ -607,6 +617,161 @@ a {
     color: #FD6F00;
     letter-spacing: 0.63px;
     font-size: 12px;
+}
+/* contact-us page code */
+.contact-us-section, .inner-contact-us{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.inner-contact-us h2{
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1.95px;
+    color: #000;
+    text-align: center;
+}
+.address-detail-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.address-box, .form-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ad-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    background: #FD6F00;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.ad-icon i{
+    text-align: center;
+}
+.icon-text{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.inner-right{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner-form h3{
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+.inner-form .contact-form-left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #FD6F00;  
+}
+.contact-form-righ{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contact-form{
+    outline: none;
+    border: none;
+    width: 90%;
+    
+}
+fieldset, textarea{
+    outline: none;
+    border: none;
+}
+.contact-form .form-group label {
+    color: #fff !important;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.contact-form .form-group label, .form-group input {
+    width: 100%;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    color: #000;
+}
+textarea{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 15px;
+    background: #EDECEC;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none !important;
+    width: 100%;
+}
+.form-control{
+    height: 36px;
+    background: #EDECEC;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 15px;
+}
+form button{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    color: #000;
+    background: #ffffff;
+    border: none;
+    font-size: 19px;
+    font-weight: 400;
+}
+.flex-50{
+    width: 126px !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pl-5{
+    padding-left: 5px;
+}
+.pr-5{
+    padding-right: 5px;
+}
+.form-check-box input, .form-check-box label{
+    font-size: 14px !important;
+    padding: 5px !important;
+    color: #ffffff;
+   text-transform: lowercase;
+}
+.form-check-box{
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait)
@@ -886,6 +1051,10 @@ a {
     .mt-12 {
         margin-top: 0;
     }
+    .inner-form .contact-form-left, .contact-form-right{
+        width: 50%;
+        flex-direction: row;
+    }
 
 }
 
@@ -1118,6 +1287,8 @@ a {
       .myTabs .tabsTitle{
         display: flex;
         flex-wrap: wrap;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
       }
       .myTabs .tabsTitle .tabButton{
         padding:25px;
@@ -1125,7 +1296,7 @@ a {
         color:#ffffff;
         font-size:16px;
         border-left:1px solid lightgray;
-        flex:1;
+        /* flex:1; */
         cursor: pointer;
       }
       .myTabs .tabsTitle .tabButton:hover{
@@ -1143,12 +1314,23 @@ a {
         background-color:#ffffff;
         padding:25px;
         font-size:12px;
-        display: none;
+        /* display: none; */
       }
       .myTabs .tabsContent .tabContent.active{
         display: block;
       }
       .tabContent{
         background: #F8F8F8 !important;
+        display: none;
       }
+      .address-box{
+        width: 25%;
+      }
+      .inner-form .contact-form-left, .contact-form-right{
+        width: 50%;
+        flex-direction: row;
+    }
+    .alert{
+        display: none;
+    }
 }

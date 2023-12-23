@@ -47,7 +47,7 @@
                             <li class="list-item"><a href="#">Service</a></li>
                             <li class="list-item"><a href="#">Projects</a></li>
                             <li class="list-item"><a href="#">Testimonials</a></li>
-                            <li class="list-item"><a href="#">Contact</a></li>
+                            <li class="list-item"><a href="contact.html">Contact</a></li>
                             <button type="button">Download CV</button>
                         </ul>
                     </div>
@@ -111,17 +111,17 @@
     <section class="about-me-tabs">
         <div class="myTabs">
             <div class="tabsTitle">
-                <a href="#tab1" class="tabButton">Tab 1</a>
+                <a href="#" class="tabButton" data-filter="tab-one">Tab 1</a>
 
-                <a href="#tab2" class="tabButton">Tab 2</a>
+                <a href="#" class="tabButton" data-filter="tab-two">Tab 2</a>
 
-                <a href="#tab3" class="tabButton">Tab 3</a>
+                <a href="#" class="tabButton" data-filter="tab-three">Tab 3</a>
 
             </div>
             <div class="tabsContent">
 
-                <div id="tab3" class="tabContent">
-
+                <div id="tab1" class="tabContent">
+                    <h3>tab one</h3>
                     <p>Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus.
                         Phasellus consequat urna tellus Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam
                         mauris est risus lectus. Phasellus consequat urna tellus Lorem ipsum dolor sit amet consectetur.
@@ -139,8 +139,8 @@
 
                 </div>
 
-                <div id="tab1" class="tabContent">
-
+                <div id="tab2" class="tabContent">
+                    <h3>tab two</h3>
                     <p>Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus.
                         Phasellus consequat urna tellus Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam
                         mauris est risus lectus. Phasellus consequat urna tellus Lorem ipsum dolor sit amet consectetur.
@@ -156,8 +156,8 @@
 
                 </div>
 
-                <div id="tab2" class="tabContent">
-
+                <div id="tab3" class="tabContent">
+                    <h3>tab three</h3>
                     <p>Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus.
                         Phasellus consequat urna tellus Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam
                         mauris est risus lectus. Phasellus consequat urna tellus Lorem ipsum dolor sit amet consectetur.
@@ -253,8 +253,8 @@
                         donec morbi convallis pretium</p>
                 </div>
                 <div class="input-box d-flex pt-25">
-                    <input type="text" id="email" name="email" placeholder="Enter Your Email">
-                    <a href="#">Contact me</a>
+                    <input type="text" id="email" name="email" placeholder="Enter Your Email" required value="">
+                   <button>Contact me</button>
                 </div>
             </div>
         </div>
