@@ -45,7 +45,7 @@
                             <li class="list-item"><a href="index.html">Home</a></li>
                             <li class="list-item"><a href="about-me.html">About me</a></li>
                             <li class="list-item"><a href="#">Service</a></li>
-                            <li class="list-item"><a href="#">Projects</a></li>
+                            <li class="list-item"><a href="image-slider.html">Projects</a></li>
                             <li class="list-item"><a href="#">Testimonials</a></li>
                             <li class="list-item"><a href="contact.html">Contact</a></li>
                             <button type="button">Download CV</button>
@@ -55,96 +55,102 @@
             </div>
         </nav>
     </header>
-   <section class="contact-us-section padding">
-    <div class="container">
-        <div class="inner-contact-us">
-            <h2>Contact Form</h2>
-            <div class="address-detail-box pt-25">
-                <div class="address-box">
-                    <div class="ad-icon">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+    <section class="contact-us-section padding">
+        <div class="container">
+            <div class="inner-contact-us">
+                <h2>Contact Form</h2>
+                <div class="address-detail-box pt-25">
+                    <div class="address-box">
+                        <div class="ad-icon">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon-text">
+                            <p><strong>Address:</strong> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                        </div>
                     </div>
-                    <div class="icon-text">
-                        <p><strong>Address:</strong> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                    <div class="address-box">
+                        <div class="ad-icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon-text">
+                            <p><strong>Phone:</strong> <a href="tel://1235235598">+ 1235 2355 98</a></p>
+                        </div>
+                    </div>
+                    <div class="address-box">
+                        <div class="ad-icon">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon-text">
+                            <p><strong>Email:</strong> <a href="mailto:arja.bhavani@gmail.com">info@yoursite.com</a></p>
+                        </div>
+                    </div>
+                    <div class="address-box">
+                        <div class="ad-icon">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon-text">
+                            <p><strong>Website:</strong> yoursite.com</p>
+                        </div>
                     </div>
                 </div>
-                <div class="address-box">
-                    <div class="ad-icon">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                    </div>
-                    <div class="icon-text">
-                        <p><strong>Phone:</strong> <a href="tel://1235235598">+ 1235 2355 98</a></p>
-                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="form-section d-flex padding">
+        <div class="container">
+            <div class="inner-form pt-25 d-flex">
+                <div class="contact-form-left pt-25 d-flex">
+                    <h3 class="mb-10 pb-15">Please input the details below</h3>
+                    <form action="" class="contact-form d-flex" id="contact-n" onsubmit="return validateForm()">
+                        <fieldset class="form-group d-flex ">
+                            <label for="fname" class="fname flex-50 pr-5">FULL NAME</label>
+                            <input type="text" class="form-control error flex-50 pl-5 fname mb-10" id="fname"
+                                placeholder="Name"><br>
+                            <label for="fname" class="fname flex-50 pl-5">LAST NAME</label>
+                            <input type="text" class="form-control error flex-50 pl-5 mb-10" id="lname"
+                                placeholder="Last name"><br>
+                            <div class="d-flex justify-bw w-100">
+                                <div class="alert mb-10" id="fname-error">Please enter your name.</div>
+                                <div class="alert mb-10" id="lname-error">Please enter your last name.</div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-group d-flex">
+                            <label for="fname" class="fname">EMAIL ADDRESS</label>
+                            <input type="text" class="form-control error pl-5 femail" id="email" placeholder="Email">
+                            <div class="alert w-100 mb-10" id="email-error">Please enter your email id.</div>
+                            <label for="fname" class="fname">CONTACT</label>
+                            <input type="text" class="form-control error pl-5" id="fcontact"
+                                placeholder="Contact number">
+                            <div class="alert w-100 mb-10" id="fcontact-error">Please enter your contact number.</div>
+                            <label for="fname" class="fname">MESSAGE</label>
+                            <textarea name="message" id="message" cols="20" rows="10" placeholder="Message"
+                                class="pl-5"></textarea>
+                            <div class="alert w-100 mb-10" id="message-error">Please enter message.</div>
+                        </fieldset>
+                        <fieldset class="form-check-box mb-10">
+                            <input type="checkbox" name="fname" id="fname_check" value="check1">
+                            <label for="fname" class="fname">FULL NAME</label>
+                            <input type="checkbox" name="fname" id="lname_check" value="check2">
+                            <label for="fname" class="fname">LAST NAME</label>
+                            <input type="checkbox" name="fname" id="email_check" value="check3">
+                            <label for="fname" class="fname">EMAIL</label>
+                            <input type="checkbox" name="fname" id="contact_check" value="check4">
+                            <label for="fname" class="fname">CONTACT</label>
+                            <input type="checkbox" name="fname" id="mess_check" value="check5">
+                            <label for="fname" class="fname">MESSAGE</label>
+                            <!-- <div class="alert" id="name_alert">Please check atleast one check box</div> -->
+                        </fieldset>
+                        <button class="mb-30" type="button" id="contact-two-btn">Send message</button>
+                    </form>
                 </div>
-                <div class="address-box">
-                    <div class="ad-icon">
-                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                    </div>
-                    <div class="icon-text">
-                        <p><strong>Email:</strong> <a href="mailto:arja.bhavani@gmail.com">info@yoursite.com</a></p>
-                    </div>
-                </div>
-                <div class="address-box">
-                    <div class="ad-icon">
-                        <i class="fa fa-globe" aria-hidden="true"></i>
-                    </div>
-                    <div class="icon-text">
-                        <p><strong>Website:</strong> yoursite.com</p>
+                <div class="contact-form-right pt-25 mt-12 d-flex">
+                    <div class="inner-right d-flex mb-30">
+                        <img src="images/img.jpg.webp" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-   </section>
-   <section class="form-section d-flex padding">
-    <div class="container">
-        <div class="inner-form pt-25 d-flex">
-            <div class="contact-form-left pt-25 d-flex">
-                <h3 class="mb-10 pb-15">Please input the details below</h3>
-                <form action="" class="contact-form d-flex" id="contact-n" onsubmit="return validateForm()">
-                    <fieldset class="form-group d-flex ">
-                        <label for="fname" class="fname flex-50 pr-5">FULL NAME</label>
-                        <input type="text" class="form-control error flex-50 pl-5 fname" id="fname" placeholder="Name" >
-                        <div class="alert" id="fname-error">Please enter your name.</div>
-                        <label for="fname" class="fname flex-50 pl-5">LAST NAME</label>
-                        <input type="text" class="form-control error flex-50 pl-5" id="lname" placeholder="Last name" >
-                        <div class="alert" id="lname-error">Please enter your last name.</div>
-                    </fieldset>
-                    <fieldset class="form-group d-flex">
-                        <label for="fname" class="fname">EMAIL ADDRESS</label>
-                        <input type="text" class="form-control error pl-5 femail" id="email" placeholder="Email" >
-                        <div class="alert" id="email-error">Please enter your email id.</div>
-                        <label for="fname" class="fname">CONTACT</label>
-                        <input type="text" class="form-control error pl-5" id="fcontact" placeholder="Contact number" >
-                        <div class="alert" id="fcontact-error">Please enter your contact number.</div>
-                        <label for="fname" class="fname">MESSAGE</label>
-                        <textarea name="message" id="message" cols="20" rows="10" placeholder="Message" class="pl-5"></textarea>
-                        <div class="alert" id="message-error">Please enter message.</div>
-                    </fieldset>
-                    <fieldset class="form-check-box mb-10">
-                        <input type="checkbox" name="fname" id="fname_check" value="check1">
-                        <label for="fname" class="fname">FULL NAME</label>
-                        <input type="checkbox" name="fname" id="lname_check" value="check2">
-                        <label for="fname" class="fname">LAST NAME</label>
-                        <input type="checkbox" name="fname" id="email_check" value="check3">
-                        <label for="fname" class="fname">EMAIL</label>
-                        <input type="checkbox" name="fname" id="contact_check" value="check4">
-                        <label for="fname" class="fname">CONTACT</label>
-                        <input type="checkbox" name="fname" id="mess_check" value="check5">
-                        <label for="fname" class="fname">MESSAGE</label>
-                        <!-- <div class="alert" id="name_alert">Please check atleast one check box</div> -->
-                    </fieldset>
-                    <button class="mb-30" type="button" id="contact-two-btn">Send message</button>
-                </form>
-            </div>
-            <div class="contact-form-right pt-25 mt-12 d-flex">
-                <div class="inner-right d-flex mb-30">
-                    <img src="images/img.jpg.webp" alt="" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-   </section>
+    </section>
     <footer class="footer-section d-flex padding">
         <div class="container">
             <div class="inner-footer d-flex flex-column">

@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* comman classes styles starts here */
+.container {
+    width: 100%;
+    max-width: 1140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider--styles .owl-item{
+    width: 373px !important;
+    background: #FD6F00 !important;
+    /* height: 500px; */
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+}
+.slider--styles .owl-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 35px;
+}
+.slider--styles .owl-carousel .owl-nav button.owl-prev{
+    position: relative;
+    top: 200px !important;
+    left: -22px !important;
+}
+.slider--styles .owl-carousel .owl-nav button.owl-next{
+    position: relative;
+    top: 200px !important;
+    right: -1119px !important;
+}
+/* .slider--styles .owl-carousel .owl-stage{
+    transform:none !important;
+} */
+.slider--styles .owl-theme .owl-dots{
+    display: none !important;
+}
+.carousel--text h4{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.carousel--text p{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+.carousel--item-image img{
+    height: 467px !important;
+}

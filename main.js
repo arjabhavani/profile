@@ -31,7 +31,7 @@ $(document).ready(function () {
     // });
 
     $('.owl-carousel').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         nav: true,
         responsive: {
@@ -103,7 +103,8 @@ $(document).ready(function () {
         if (fname == "") {
             // alert("Please enter first name to proceed further");
             // $("#name_alert").show();
-            $("#fname-error").show();
+            $("#fname-error").show().css('color', 'red');
+            
             if(!focusEnabled) {
                 $("#fname").focus();
                 focusEnabled= true;
@@ -111,7 +112,7 @@ $(document).ready(function () {
         }
         if (lname == "") {
             // alert("Please enter last name to proceed further");
-            $("#lname-error").show();
+            $("#lname-error").show().css('color', 'red');
             if(!focusEnabled) {
                 $("#lname").focus();
                 focusEnabled= true;
@@ -119,7 +120,7 @@ $(document).ready(function () {
         } 
         if (emailId == "") {
             // alert("Please enter email id to proceed further");
-            $("#email-error").show();
+            $("#email-error").show().css('color', 'red');
             if(!focusEnabled) {
                 $("#email").focus()
                 focusEnabled= true;
@@ -127,7 +128,7 @@ $(document).ready(function () {
         } 
         if (fcontact =="") {
             // alert("Please enter contact no to proceed further");
-            $("#fcontact-error").show();
+            $("#fcontact-error").show().css('color', 'red');
             if(!focusEnabled) {
                 $("#fcontact").focus()
                 focusEnabled= true;
@@ -135,7 +136,7 @@ $(document).ready(function () {
         } 
         if (fsub == "") {
             // alert("Please enter subject to proceed further");
-            $("#fsub-error").show();
+            $("#fsub-error").show().css('color', 'red');
             if(!focusEnabled) {
                 $("#fsub").focus()
                 focusEnabled= true;
@@ -143,7 +144,7 @@ $(document).ready(function () {
         }
         if (message == "") {
             // alert("Please enter message to proceed further");
-            $("#message-error").show();
+            $("#message-error").show().css('color', 'red');
             if(!focusEnabled) {
                 $("#message").focus()
                 focusEnabled= true;
@@ -205,4 +206,23 @@ $(document).ready(function () {
     //     return true;
     //   }
     
+    $('#owl-carousel-two').owlCarousel({
+        loop:false,
+        rewind:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+
+
 });
