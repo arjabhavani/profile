@@ -18,47 +18,65 @@ html {
     margin-right: auto;
 }
 
-.slider--styles .owl-item{
-    width: 373px !important;
-    background: #FD6F00 !important;
-    /* height: 500px; */
-    /* display: flex;
+.item-box{
+    width: 350px;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #FD6F00;
 }
-.slider--styles .owl-nav{
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 35px;
+.img-box{
+    width: 100%;
 }
-.slider--styles .owl-carousel .owl-nav button.owl-prev{
-    position: relative;
-    top: 200px !important;
-    left: -22px !important;
-}
-.slider--styles .owl-carousel .owl-nav button.owl-next{
-    position: relative;
-    top: 200px !important;
-    right: -1119px !important;
-}
-/* .slider--styles .owl-carousel .owl-stage{
-    transform:none !important;
-} */
-.slider--styles .owl-theme .owl-dots{
-    display: none !important;
-}
-.carousel--text h4{
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-}
-.carousel--text p{
+.text-box p{
     font-size: 14px;
     color: #fff;
+    padding: 5px;
     text-align: center;
-    padding: 15px;
 }
-.carousel--item-image img{
-    height: 467px !important;
+/* .owl-carousel.owl-drag .owl-item{
+    width: 350px !important;
+} 
+.owl-theme .owl-dots{
+    display: none !important;
+}
+ .owl-theme .owl-nav{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.owl-carousel .owl-nav button.owl-next{
+    position: relative;
+    top: 0;
+    right: -1137px;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    position: relative;
+    top: 0;
+    left: -26px;
+} */
+/* #banner-carousel .img-box{
+    width: 1322px;
+    height: 550px;
+} */
+.banner--nav .owl-nav{
+    position: absolute !important;
+    top: 50% !important;
+    left: 0 !important;
+}
+.banner--nav .owl-nav .owl-prev span{
+    font-size: 35px;
+}
+.banner--nav .owl-nav .owl-prev{
+    position: relative;
+    left: -30px;
+}
+.banner--nav .owl-nav .owl-next span{
+    font-size: 35px;
+}
+.banner--nav .owl-nav .owl-next{
+    position: relative;
+    right: -1140px;
 }

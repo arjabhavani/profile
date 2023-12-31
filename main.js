@@ -30,7 +30,7 @@ $(document).ready(function () {
     //     $(".work-box").siblings().hide();
     // });
 
-    $('.owl-carousel').owlCarousel({
+    $('#owl-carousel-one').owlCarousel({
         loop: false,
         margin: 10,
         nav: true,
@@ -207,8 +207,7 @@ $(document).ready(function () {
     //   }
     
     $('#owl-carousel-two').owlCarousel({
-        loop:false,
-        rewind:true,
+        loop:true,
         margin:10,
         nav:true,
         responsive:{
@@ -223,6 +222,42 @@ $(document).ready(function () {
             }
         }
     })
+
+
+    $('#owl-carousel-third').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+
+    $('#banner-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+
 
 
 });
